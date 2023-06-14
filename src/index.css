@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+    @font-face {
+        font-family: SFProDisplay-Regular;
+        font-weight: 400;
+        src: url(./fonts/SFProDisplay-Regular.woff) format("woff");
+    }
+    @font-face {
+        font-family: SFProDisplay-Medium;
+        font-weight: 400;
+        src: url(./fonts/SFProDisplay-Medium.woff) format("woff");
+    }
+    @font-face {
+        font-family: SFProDisplay-Semibold;
+        font-weight: 400;
+        src: url(./fonts/SFProDisplay-Semibold.woff) format("woff");
+    }
+}
