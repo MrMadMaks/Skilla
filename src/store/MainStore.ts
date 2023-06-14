@@ -3,7 +3,7 @@ import { makeAutoObservable } from "mobx";
 import { ICall } from "../types/Calls.types";
 
 export class MainStore {
-  calls: any[] = [];
+  calls: ICall[] = [];
   filter: string | undefined;
   endDate: string | undefined = format(new Date(), "yyyy-MM-dd");
   startDate: string | undefined = format(subDays(new Date(), 3), "yyyy-MM-dd");
