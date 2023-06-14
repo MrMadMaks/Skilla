@@ -21,7 +21,7 @@ export class MainStore {
     makeAutoObservable(this);
   }
 
-  searchNumber = (calls: any[], term: string | undefined) => {
+  searchNumber = (calls: ICall[], term: string | undefined) => {
     if (term === undefined || term.length === 0) {
       return calls;
     }
@@ -68,8 +68,8 @@ export class MainStore {
 
   setFilterDate = (
     fixDate?: "3d" | "week" | "year" | "month",
-    startDate?: any,
-    endDate?: any
+    startDate?: number,
+    endDate?: number
   ) => {
     const map = { "3d": 3, "week": 7, "month": 30, "year": 365 };
 
